@@ -1,0 +1,26 @@
+<% layout('../layouts/boilerplate') %>
+    <div class="row">
+        <h1 class="text-center">New Blog</h1>
+        <div class="col-6 offset-3">
+            <form action="/blog" method="POST">
+                <div class="mb-3">
+                <label class="form-label" for="newtitle">Title</label>
+                <input class="form-control" type="text" id="newtitle" placeholder="Add Title" name="title">
+                </div>
+                <div class="mb-3">
+                <label class="form-label" for="newblog">New Blog</label>
+                <textarea class="form-control" id="newblog" placeholder="Write your Blog" name='description' rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                <label class="form-label" for="image">Image URL</label>
+                <input class="form-control" type="text" id="image" placeholder="Image URL" name="image">
+                </div>
+                <div class="mb-3">
+                <label class="form-label" for="author">Author</label>
+                <input class="form-control" type="text" id="author" placeholder="Author's name" name="author">
+                </div>
+                <button type="submit" class="btn btn-success mt-3">Submit</button>
+                <button class="btn btn-danger mt-3"><a style="text-decoration: none; color: white;" href="/blog">Discard</a></button>
+            </form>
+        </div>
+    </div>
